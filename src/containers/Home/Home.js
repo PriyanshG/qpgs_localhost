@@ -5,7 +5,7 @@ import './Home.css'
 const Home= ()=>{
 	return(
 
-			<div className='divide50 sze90'>
+			<div className='divide50 sze20'>
 			
 					<div id="divB" >
 					{	/*<img src={defimg} height='100%' />*/}

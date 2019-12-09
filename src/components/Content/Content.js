@@ -13,6 +13,7 @@ import Add from '../../containers/Add/Add';
 import Show from '../../containers/Show/Show';
 import ModifyHelp from '../../containers/ModifyHelp/ModifyHelp';
 import Operation from '../../containers/Operation/Operation';
+import Team from '../../containers/Team/Team';
 
 
 
@@ -59,6 +60,9 @@ const Content =({setQuestions,quest,loadUser})=>{
 			</Route> 
 			<Route exact path={"/profile/operation"}>
 				<Operation quest={quest} setQuestions={setQuestions} />
+			</Route> 
+			<Route exact path="/team">
+				<Team />
 			</Route> 
 		{/*	<Route exact path={"/profile/qpgs"}>
 				<Qpgs />
