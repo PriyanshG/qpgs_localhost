@@ -1,0 +1,27 @@
+.button{
+	 background-color: #FEC08C; /* Green */
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.flo_bw{
+  display: flex;
+  justify-content: space-between;
+}
+.flo_ar{
+  display: flex;
+  justify-content: space-around;
+}
+
+.gridRow50{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}

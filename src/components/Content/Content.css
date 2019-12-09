@@ -1,0 +1,15 @@
+.divide50{
+	display:grid;
+	grid-template-columns:50% 50%;
+}
+
+.bgcolor{
+	background:#3EF9F6;
+}
+
+.sze20{
+	height:20vh;
+}
+.sze90{
+	height:90vh;
+}

@@ -1,0 +1,16 @@
+#divB{
+	background-image: url('../../images/title_no.png');
+	background-size: cover;
+	background-position: center;
+  height: 100%;
+}
+
+.imageLogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+.textsz{
+	font-size: 1.3rem;
+}
