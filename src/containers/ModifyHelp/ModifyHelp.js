@@ -27,7 +27,7 @@ const ModifyHelp=()=>{
 	const uid=Number(localStorage.getItem('uid'));
 	const modifyQuestion=()=>{
 
-	    fetch('http://192.168.69.25:3000/profile/modify',{
+	    fetch('http://localhost:3000/profile/modify',{
 	      method:'PUT',
 	      headers:{'Content-Type':'application/json'},
 	      body:JSON.stringify({

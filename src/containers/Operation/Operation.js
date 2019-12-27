@@ -114,7 +114,7 @@ useEffect(() => {
 
 		console.log('ma ka ',typeof A);
 		const uid=Number(localStorage.getItem('uid'));
-		fetch('https://serene-river-38708.herokuapp.com/profile/operation',{
+		fetch('http://localhost:3000/profile/operation',{
 	      method:'POST',
 	      headers:{'Content-Type':'application/json'},
 	      body:JSON.stringify({
@@ -146,7 +146,7 @@ useEffect(() => {
 		.then(()=>setret1(true));
 
 
-		fetch('https://serene-river-38708.herokuapp.com/profile/operation',{
+		fetch('http://localhost:3000/profile/operation',{
 	      method:'POST',
 	      headers:{'Content-Type':'application/json'},
 	      body:JSON.stringify({
@@ -176,7 +176,7 @@ useEffect(() => {
 		.then(()=>setret2(true));
 
 
-		fetch('https://serene-river-38708.herokuapp.com/profile/operation',{
+		fetch('http://localhost:3000/profile/operation',{
 	      method:'POST',
 	      headers:{'Content-Type':'application/json'},
 	      body:JSON.stringify({

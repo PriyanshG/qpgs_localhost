@@ -27,7 +27,7 @@ const Add=()=>{
 	const uid=Number(localStorage.getItem('uid'));
 	const addQuestion=()=>{
 
-	    fetch('https://serene-river-38708.herokuapp.com/profile/add',{
+	    fetch('http://localhost:3000/profile/add',{
 	      method:'POST',
 	      headers:{'Content-Type':'application/json'},
 	      body:JSON.stringify({

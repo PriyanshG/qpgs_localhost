@@ -13,6 +13,7 @@ const Show=()=>{
 
 	const { path } = useRouteMatch();
 	const [qCode,setQCode]=useState(0);
+	const [flag,setFlag]=useState(0);
 	
 	const [questions, setQuestions] = useState([{
 													qid: 0,
@@ -27,7 +28,7 @@ const Show=()=>{
 	const uid=Number(localStorage.getItem('uid'));
 	useEffect(()=>{
 	
-		  fetch('https://serene-river-38708.herokuapp.com/profile/show',{
+		  fetch('http://localhost:3000/profile/show',{
 	      method:'POST',
 	      headers:{'Content-Type':'application/json'},
 	      body:JSON.stringify({
@@ -36,8 +37,9 @@ const Show=()=>{
 	    })
 		.then(response=> response.json())
 		.then(res => {
-			console.log(res.length)
-			if(!res.length){
+			console.log('length',res.length);
+			if(res==='Not FOund'){
+				setFlag(1);
 				alert('No questions');
 				history.push('/profile')
 			}
@@ -56,7 +58,7 @@ const Show=()=>{
 		localStorage.setItem('qid',qCode);
 
 		const qid=Number(localStorage.getItem('qid'));	
-		fetch('https://serene-river-38708.herokuapp.com/profile/delete',{
+		fetch('http://localhost:3000/profile/delete',{
 	      method:'DELETE',
 	      headers:{'Content-Type':'application/json'},
 	      body:JSON.stringify({
@@ -94,7 +96,7 @@ const Show=()=>{
 						<th>Question Statement</th>
 						<th>Difficulty</th>
 					</tr>
-					{table}
+						{table}
 				</table>
 
 			</div>

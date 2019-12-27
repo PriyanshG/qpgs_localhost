@@ -16,7 +16,7 @@ const [name,setName]=useState('');
   if(!email|| !name || !password)
     return alert('Invalid Input');//console.log('Incorrect form submis')
 
-    fetch('https://serene-river-38708.herokuapp.com/register',{
+    fetch('http://localhost:3000/register',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
